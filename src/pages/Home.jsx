@@ -1,10 +1,10 @@
+import { Link } from "react-router-dom";
 import Dashboard from "../components/Dashboard";
 
 function Home() {
   return (
     <>
       <section className="hero">
-
         <div className="container text-center">
 
           <h1 className="display-3 fw-bold">
@@ -16,16 +16,17 @@ function Home() {
             and Improve Road Safety.
           </p>
 
-          <button className="btn btn-warning btn-lg mt-3">
+          <Link
+            to="/events"
+            className="btn btn-warning btn-lg mt-3"
+          >
             View Live Status
-          </button>
+          </Link>
 
         </div>
-
       </section>
 
       <Dashboard />
-
     </>
   );
 }
